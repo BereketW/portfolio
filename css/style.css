@@ -7,8 +7,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 .container {
   width: 100%;
@@ -62,11 +64,12 @@ main {
   background-color: #f7f7f7;
   border-radius: 20px;
   border: 2px solid #f1f1f1;
-  flex: 1 1 0;
+  /* flex: 1 1 0; */
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-  width: 160px;
-  height: 220px;
-  position: relative;
+  max-width: 160px;
+  max-height: 220px;
+  /* position: relative; */
+
   transition: width 0.7s;
 }
 .card > div > img {
@@ -81,9 +84,10 @@ main {
   display: inline-block;
   border-radius: inherit;
 }
-.card:hover {
-  width: 160px;
-}
+/* .card:hover {
+  width: 200px;
+  filter: saturate(100%);
+} */
 
 .cardcontainer {
   display: flex;
@@ -92,6 +96,8 @@ main {
 }
 .tag {
   font-size: 16px;
+  font-weight: 600;
+  margin-top: 4px;
   text-align: center;
 }
 .logo {
@@ -141,4 +147,50 @@ main {
   color: #2229;
   text-align: center;
   font-size: 0.75rem;
+}
+
+.services {
+  position: absolute;
+  width: 100%;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+
+  transform: translateX(50%);
+  transition: all 0.4s;
+  transform: translateY(100%);
+  /* border: 2px solid red; */
+}
+
+#service img {
+  width: 100%;
+  height: auto;
+}
+.service_img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.service {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding: 16px;
+  margin-top: -20px;
+  border: 2px solid #f1f1f1;
+}
+
+.service > h1 {
+  font-size: 16px;
+}
+.service-hide {
+}
+
+.service-container:hover .services {
+  /* transform: translateY(0);
+   */
+  transform: translateY(0);
+  /* bottom: 0; */
+  /* bottom: 0; */
 }
