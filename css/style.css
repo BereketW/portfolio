@@ -70,7 +70,7 @@ main {
   max-height: 220px;
   /* position: relative; */
 
-  transition: width 0.7s;
+  transition: all 0.7s;
 }
 .card > div > img {
   max-width: 100%;
@@ -170,6 +170,7 @@ main {
   max-width: 100%;
   height: 100%;
   border-radius: inherit;
+  object-fit: contain;
 }
 
 .service {
@@ -193,4 +194,71 @@ main {
   transform: translateY(0);
   /* bottom: 0; */
   /* bottom: 0; */
+}
+
+.work {
+  position: absolute;
+  /* left: 0; */
+  /* width: 100%; */
+  width: 200px;
+  /* height: 200px; */
+  background: #f7f7f7;
+}
+.work-1 {
+  left: 50px;
+  top: 150px;
+}
+.work-2 {
+  right: 50px;
+  top: 150px;
+}
+.work-3 {
+  left: 50px;
+  bottom: 60px;
+}
+.work-4 {
+  right: 50px;
+  bottom: 60px;
+}
+.works-container:hover .works {
+  display: block !important;
+  transition: all 0.7s;
+}
+.works-container {
+  transition: all 0.7s;
+}
+.works {
+  display: none;
+  transition: all 0.7s;
+}
+.work::before {
+  content: "";
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 90%
+  );
+  transition: all 0.7s;
+}
+
+.work_img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.card:hover .card > div {
+  width: 180px;
+}
+.work-1 > .work_img_small {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.work-1:nth-child(1) {
 }

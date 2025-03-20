@@ -27,11 +27,26 @@
         </h1>
 
         <div class="flex gap10 cardcontainer">
-          <div class="card">
-            <div>
+          <div draggable="true" class="card works-container">
+            <div class="">
               <img src="assets/img/work.png" alt="Bereket Wolde" />
               <div class="tag">Works</div>
             </div>
+            <section class="works">
+              <div class="work flex work-1" class="gap-8">
+                <img class="work_img" src="assets/img/abrelohd.png" />
+                <img class="work_img_small" src="assets/img/abrelo-blog.png" />
+              </div>
+              <div class="gap-8 work work-2">
+                <img class="work_img" src="assets/img/rejuvaglow.png" />
+              </div>
+              <div class="gap-8 work work-3">
+                <img class="work_img" src="assets/img/taskAI.png" />
+              </div>
+              <div class="gap-8 work work-4">
+                <img class="work_img" src="assets/img/taskAI.png" />
+              </div>
+            </section>
           </div>
           <div class="card service-container">
             <div>
@@ -69,8 +84,10 @@
       </section>
       <footer class="flex flex-col items-center gap10">
         <div class="flex gap-4 footer-links">
-          <button class="email"><a>Email</a></button>
-          <button class="call"><a>Book a call</a></button>
+          <button draggable="true" dropzone="call" class="email">
+            <a>Email</a>
+          </button>
+          <button id="call" class="call"><a>Book a call</a></button>
         </div>
         <div class="footer-slogan">
           *Disclaimer: We design for your users, not just for you.
