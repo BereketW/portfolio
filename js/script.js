@@ -5,7 +5,12 @@ const btnClose = document.querySelector(".btn-close");
 const workBtn = document.querySelector(".work-btn");
 const aboutBtn = document.querySelector(".about-btn");
 const abouts = document.querySelectorAll(".about");
+const serviceBtn = document.querySelector(".service-btn");
+const accordionCard = document.querySelector(".accordion-card");
+const accordionCardTitle = document.querySelector(".accordion-title");
 const aboutCardContainer = document.querySelector(".about-hover-card");
+const serviceModalClose = document.querySelector(".service-modal-close");
+const serviceModal = document.querySelector(".service-modal");
 console.log(modalCard);
 btnClose.addEventListener("click", () => {
   worksModal.classList.add("display-none");
@@ -17,9 +22,10 @@ workBtn.addEventListener("click", () => {
   worksModal.classList.remove("display-none");
 });
 
-document.addEventListener("keydown", () => {
-  worksModal.classList.add("display-none");
-});
+// document.addEventListener("keydown", () => {
+//   worksModal.classList.add("display-none");
+//   serviceModal.classList.remove("display-none");
+// });
 
 aboutBtn.addEventListener("mouseenter", () => {
   // aboutCardContainer.style.display = " block";
@@ -34,3 +40,19 @@ aboutBtn.addEventListener("mouseleave", () => {
   // console.log(aboutCardContainer);
   // console.log("Hello Mouse");
 });
+
+serviceModalClose.addEventListener("click", () => {
+  serviceModal.classList.add("display-none");
+});
+serviceBtn.addEventListener("click", () => {
+  console.log(serviceModal);
+  serviceModal.classList.remove("display-none");
+});
+accordionCardTitle.addEventListener("click", () => {
+  console.log(accordionCard.querySelector("p"));
+  accordionCard.querySelector("p").style.height = "100%";
+});
+// document.addEventListener("keydown", () => {
+//   serviceModal.style.display = "none";
+//   console.log(serviceBtn);
+// });
