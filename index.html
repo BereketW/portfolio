@@ -15,7 +15,7 @@
     <main>
       <nav class="flex items-center">
         <div class="logo_container">
-          <img class="logo" src="assets/img/logo.jpeg"
+          <img class="logo" src="assets/img/logo.jpeg" />
         </div>
       </nav>
       <section class="flex container flex-col gap3">
@@ -88,7 +88,7 @@
           <button draggable="true" dropzone="call" class="email">
             <a>Email</a>
           </button>
-          <button id="call" class="call"><a>Book a call</a></button>
+          <button id="call" class="call email email-btn">Contact Me</button>
         </div>
         <div class="footer-slogan">
           *Disclaimer: We design for your users, not just for you.
@@ -132,14 +132,72 @@
           </ul>
           <div class="accordion">
             <div class="accordion-card">
-              <h3 class="accordion-title">
+              <div class="accordion-title">
                 Frontend Development <span>+</span>
-              </h3>
-              <p class="accordion-card-details">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptates dolore quisquam laboriosam vero sequi, quod nostrum
-                nemo harum consectetur! Dolorum.
-              </p>
+              </div>
+              <div class="accordion-content">
+                <p>Creating beautiful, responsive, and user-friendly interfaces that bring your vision to life.</p>
+                <ul>
+                  <li>Responsive Web Design</li>
+                  <li>Interactive UI/UX Development</li>
+                  <li>Single Page Applications</li>
+                  <li>Progressive Web Apps</li>
+                  <li>Performance Optimization</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-item">React</span>
+                  <span class="tech-item">Next.js</span>
+                  <span class="tech-item">TypeScript</span>
+                  <span class="tech-item">Tailwind CSS</span>
+                  <span class="tech-item">Framer Motion</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-card">
+              <div class="accordion-title">
+                Backend Development <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <p>Building robust and scalable server-side applications with modern technologies.</p>
+                <ul>
+                  <li>RESTful API Development</li>
+                  <li>Database Design & Optimization</li>
+                  <li>Server Architecture</li>
+                  <li>Authentication & Authorization</li>
+                  <li>Performance Optimization</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-item">Node.js</span>
+                  <span class="tech-item">Express</span>
+                  <span class="tech-item">MongoDB</span>
+                  <span class="tech-item">PostgreSQL</span>
+                  <span class="tech-item">Redis</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-card">
+              <div class="accordion-title">
+                Fullstack Development <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <p>End-to-end development solutions combining frontend and backend expertise.</p>
+                <ul>
+                  <li>Full Application Architecture</li>
+                  <li>Frontend & Backend Integration</li>
+                  <li>Real-time Features</li>
+                  <li>DevOps & CI/CD Setup</li>
+                  <li>Performance Monitoring</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-item">MERN Stack</span>
+                  <span class="tech-item">Docker</span>
+                  <span class="tech-item">AWS</span>
+                  <span class="tech-item">Git</span>
+                  <span class="tech-item">CI/CD</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -157,15 +215,15 @@
         <div class="flex fact-headline">Fun Facts</div>
         <div class="facts flex flex-col">
           <div class="fact flex-col">
-            🤷🏿‍♂️ I’m taller than I look
+            🤷🏿‍♂️ I'm taller than I look
             <span
-              >174 cm may not sound huge, but I’ve got top-shelf skills.
+              >174 cm may not sound huge, but I've got top-shelf skills.
             </span>
           </div>
           <div class="fact">
-            💪 I’m basically a featherweight
+            💪 I'm basically a featherweight
             <span
-              >I’m fast enough to dodge, but don’t ask me to move your couch.
+              >I'm fast enough to dodge, but don't ask me to move your couch.
             </span>
           </div>
           <div class="fact">
@@ -176,9 +234,9 @@
             </span>
           </div>
           <div class="fact">
-            💡 I’m always curious about cool ideas
+            💡 I'm always curious about cool ideas
             <span
-              >whether it’s a project that makes life easier or just random fun
+              >whether it's a project that makes life easier or just random fun
               facts about the world.
             </span>
           </div>
@@ -197,6 +255,143 @@
         <img src="assets/img/bereket3.jpg" />
       </div>
     </section>
+    <section class="about-modal display-none">
+      <div class="service-modal-container">
+        <button class="service-modal-close"> <span>&times;</span></button>
+        <div class="service-modal-content">
+          <h1>About</h1>
+          <div class="about-intro">
+            <p>Hey there! I'm Bereket, a passionate fullstack developer who loves turning complex problems into simple, beautiful, and intuitive solutions. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying a cup of Ethiopian coffee while brainstorming my next big idea.</p>
+            </div>
+          
+          <div class="summary-section">
+            <h2 class="summary-header">Professional Summary</h2>
+            <ul class="summary-list">
+              <li>Full-Stack Developer skilled in React, Next.js, Node.js, Prisma, PostgreSQL, and MariaDB.</li>
+              <li>Experience building scalable, secure web apps with strong UI/UX focus.</li>
+              <li>Proven ability to design, develop, and deploy full-stack solutions end-to-end.</li>
+              <li>Passionate about clean code, performance optimization, and continuous learning</li>
+              <li>Delivered impactful projects, including eCommerce and AI-powered platforms</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plans-modal display-none">
+      <div class="service-modal-container">
+        <button class="service-modal-close"><span>&times;</span></button>
+        <div class="service-modal-content">
+          <h1>Plans</h1>
+          
+          <div class="checklist-section" style="margin: 2rem 0;">
+            <h3 class="checklist-header" style="text-align: center; color: #333; font-size: 1.2rem; margin-bottom: 1.5rem;">Before Continuing, Please Review:</h3>
+            <div class="checklist-card" style="background-color: #f7f7f7; border-radius: 10px; border: 1px solid #f1f1f1; padding: 1.5rem;">
+              <ul class="checklist" style="list-style: none; padding: 0; margin: 0;">
+                <li style="display: flex; align-items: center; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">
+                  <input type="checkbox" id="check1" style="margin-right: 1rem; width: 20px; height: 20px; cursor: pointer; accent-color: #2c3e50;">
+                  <label for="check1" style="cursor: pointer; flex: 1; transition: all 0.3s ease;">You have a clear vision of your project goals</label>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">
+                  <input type="checkbox" id="check2" style="margin-right: 1rem; width: 20px; height: 20px; cursor: pointer; accent-color: #2c3e50;">
+                  <label for="check2" style="cursor: pointer; flex: 1; transition: all 0.3s ease;">You understand the timeline and scope of work</label>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">
+                  <input type="checkbox" id="check3" style="margin-right: 1rem; width: 20px; height: 20px; cursor: pointer; accent-color: #2c3e50;">
+                  <label for="check3" style="cursor: pointer; flex: 1; transition: all 0.3s ease;">You're ready to provide necessary resources and feedback</label>
+                </li>
+                <li style="display: flex; align-items: center; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">
+                  <input type="checkbox" id="check4" style="margin-right: 1rem; width: 20px; height: 20px; cursor: pointer; accent-color: #2c3e50;">
+                  <label for="check4" style="cursor: pointer; flex: 1; transition: all 0.3s ease;">You agree to maintain open communication throughout the project</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="plans-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0;">
+            <div class="plan-card full-width" style="background-color: #f7f7f7; border-radius: 10px; border: 1px solid #f1f1f1; padding: 1.5rem; grid-column: 1 / -1; transition: all 0.3s ease;">
+              <h3 style="color: #333; font-size: 1.3rem; margin-bottom: 1rem;">E-commerce Development</h3>
+              <p style="color: #666; line-height: 1.6;">Complete online store solutions with secure payment integration, inventory management, and customer analytics.</p>
+            </div>
+            <div class="plan-card" style="background-color: #f7f7f7; border-radius: 10px; border: 1px solid #f1f1f1; padding: 1.5rem; transition: all 0.3s ease;">
+              <h3 style="color: #333; font-size: 1.3rem; margin-bottom: 1rem;">Web Application Development</h3>
+              <p style="color: #666; line-height: 1.6;">Custom web applications built with modern technologies, focusing on performance and user experience.</p>
+            </div>
+            <div class="plan-card" style="background-color: #f7f7f7; border-radius: 10px; border: 1px solid #f1f1f1; padding: 1.5rem; transition: all 0.3s ease;">
+              <h3 style="color: #333; font-size: 1.3rem; margin-bottom: 1rem;">AI Integration Services</h3>
+              <p style="color: #666; line-height: 1.6;">Implementing AI features to enhance your application's capabilities and user experience.</p>
+            </div>
+          </div>
+
+          <div class="benefits-section" style="margin-top: 2rem;">
+            <h2 class="benefits-header" style="background-color: #ededed; padding: 20px; text-align: center; font-size: 16px; font-weight: 600; color: #727272; margin-bottom: 1rem;">Why Work With Me</h2>
+            <div class="benefits-card" style="background-color: #f7f7f7; border-radius: 10px; border: 1px solid #f1f1f1; padding: 1.5rem;">
+              <ul class="benefits-list" style="list-style: none; padding: 0; margin: 0;">
+                <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">Dedicated one-on-one communication throughout the project</li>
+                <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">Regular updates and progress reports</li>
+                <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">Thorough testing and quality assurance</li>
+                <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">Post-launch support and maintenance</li>
+                <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">Clean, maintainable, and well-documented code</li>
+                <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">Performance optimization and best practices</li>
+                <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">Flexible and adaptable to changing requirements</li>
+                <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem; color: #444; font-size: 1.1rem; line-height: 1.6;">Timely delivery and project management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="email-modal ">
+      <div class="service-modal-container">
+        <button class="service-modal-close"><span>&times;</span></button>
+        <div class="service-modal-content">
+          <h1>Get in Touch</h1>
+          <p class="email-intro">Let's discuss your project and create something amazing together.</p>
+          
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <span class="info-text">bereketwolde@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🌍</span>
+              <span class="info-text">Based in Ethiopia</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">⏰</span>
+              <span class="info-text">Available for freelance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="toast" class="toast" style="position: fixed; bottom: 20px; right: 20px; background-color: #333; color: white; padding: 16px 24px; border-radius: 8px; display: none; z-index: 2000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s ease;">
+      <span id="toast-message"></span>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
